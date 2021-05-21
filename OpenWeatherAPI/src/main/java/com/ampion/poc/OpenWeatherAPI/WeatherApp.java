@@ -15,7 +15,7 @@ public class WeatherApp {
 	  private static String units = "metric"; 
 	  private static String API_KEY = "567634b2941bea97d0b52b43ec12a86d";
 	  
-		public static void weatherForcast(String city, float minTemp) {
+		public static void weatherForecast(String city, float minTemp) {
 			
 			String endPoint = BASE_URL + city + "&appid=" + API_KEY + "&units=" + units;
 			
@@ -72,7 +72,7 @@ public class WeatherApp {
 	
 	public static void main(String[] args) {
 		
-		WeatherApp.weatherForcast("Sydney",20);
+		WeatherApp.weatherForecast("Sydney",20);
 	}
 
 }
