@@ -1,6 +1,5 @@
 package com.ampion.poc.OpenWeatherAPI;
 
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -11,8 +10,7 @@ import java.net.http.HttpResponse.BodyHandlers;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class OpenWeatherClient {
-
+public class WeatherApp {
 	 private static String BASE_URL = "https://api.openweathermap.org/data/2.5/forecast?q=";
 	  private static String units = "metric"; 
 	  private static String API_KEY = "567634b2941bea97d0b52b43ec12a86d";
@@ -73,7 +71,10 @@ public class OpenWeatherClient {
 		}
 	
 	public static void main(String[] args) {
-		OpenWeatherClient.weatherForcast("Sydney",20);
+		
+		WeatherApp.weatherForcast("Sydney",20);
 	}
 
 }
+
+
